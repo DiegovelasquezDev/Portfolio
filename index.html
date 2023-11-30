@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"
+          ><i class="ri-code-line"></i> Portfolio
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#aboutme" class="nav__link">
+                <i class="ri-user-5-line"></i>
+                <span>About me</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#showcase" class="nav__link">
+                <i class="ri-terminal-box-fill"></i>
+                <span>Showcase</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="ri-fire-line"></i>
+                <span>Hire me!</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          <!-- Search button -->
+          <i class="ri-search-line search-button" id="search-button"></i>
+
+          <!-- login button -->
+          <i class="ri-user-line login-button" id="login-button"></i>
+
+          <!-- Theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== SEARCH ====================-->
+    <div class="search" id="search-content">
+      <form action="" class="search__form">
+        <i class="ri-search-line search__icon"></i>
+        <input
+          type="search"
+          class="search__input"
+          placeholder="What are you looking for?"
+        />
+      </form>
+      <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <!--==================== LOGIN ====================-->
+    <div class="login grid" id="login-content">
+      <form action="" class="login__form grid">
+        <h2 class="login__title">Log In</h2>
+        <div class="login__group grid">
+          <div>
+            <label for="login-email" class="login__label">Email</label>
+            <input
+              id="login-email"
+              type="email"
+              placeholder="Write your email"
+              class="login__input"
+            />
+          </div>
+          <div>
+            <label for="login-password" class="login__label">Password</label>
+            <input
+              id="login-password"
+              type="password"
+              placeholder="Enter your password"
+              class="login__input"
+            />
+          </div>
+          <div>
+            <span class="login__signup">
+              you don't have an account? <a href="#">Sign up</a>
+            </span>
+            <a href="#" class="login__forgot">You forgot your password</a>
+            <button type="submit" class="login__button button">Log In</button>
+          </div>
+        </div>
+      </form>
+      <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h2 class="home__title">
+              Hi! ✌️ <br />
+              My name is Diego
+            </h2>
+            <p class="home__description">
+              Fullstack developer ready to propel your projects with innovative
+              solutions and exceptional results. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit.
+            </p>
+            <a href="#" class="button">Download CV</a>
+          </div>
+
+          <div class="home__images">
+            <article class="home__article">
+              <img src="assets/img/bgHome.png" alt="image" class="home__img" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ME ====================-->
+      <section class="aboutme section" id="aboutme">
+        <h2 class="section__title">About me</h2>
+        <div class="about__container container grid">
+          <div class="about__profile profile">
+            <div class="profile__content">
+              <img
+                src="assets/img/profile-img.png"
+                alt="image"
+                class="profile__img"
+              />
+            </div>
+          </div>
+          <div class="about__content grid">
+            <div class="about__data grid">
+              <div class="about__info grid">
+                <h1 class="about__name">Diego Alejandro Velasquez Araque</h1>
+                <h2 class="about__profession">Fullstack developer</h2>
+                <p class="about__description">
+                  Lorem ipsum dolor sit amet consectetur
+                  <b> adipisicing elit. Unde </b> veniam culpa quas adipisci
+                  eveniet quisquam similique deserunt mollitia ipsa,
+                  <b> id modi earum possimus, quasi odit rem vero</b>
+                  dignissimos asperiores tempore.
+                </p>
+              </div>
+              <a href="#contact" class="button about__button"> Contact me </a>
+            </div>
+            <div class="about__skills">
+              <h3 class="about__skills-title">My skills are</h3>
+
+              <div class="about__skills-content grid">
+                <img
+                  src="/assets/img/home-skills-1.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-2.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-3.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-4.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-5.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-6.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-7.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-8.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+                <img
+                  src="/assets/img/home-skills-9.svg"
+                  alt="image"
+                  class="about__skills-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section">
+        <h2 class="section__title">
+          The services <br />
+          I offer
+        </h2>
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="ri-code-s-slash-line services__icon"></i>
+            <h2 class="services__title">Web developer</h2>
+            <p class="services__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              voluptas iusto nemo tempore eum mollitia corporis natus.
+            </p>
+
+            <button class="services__button button">Know more</button>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-pen-nib-line services__icon"></i>
+            <h2 class="services__title">web design</h2>
+            <p class="services__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              voluptas iusto nemo tempore eum mollitia corporis natus.
+            </p>
+
+            <button class="services__button button">Know more</button>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-layout-2-line services__icon"></i>
+            <h2 class="services__title">Interface UI/UX</h2>
+            <p class="services__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              voluptas iusto nemo tempore eum mollitia corporis natus.
+            </p>
+
+            <button class="services__button button">Know more</button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== showcase ====================-->
+      <section class="showcase section" id="showcase">
+        <h2 class="section__title">Projects</h2>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <h2 class="section__title">
+            Let's talk <br />
+            about your project
+          </h2>
+
+          <form action="" class="contact__form grid" id="contact-form">
+            <div class="contact__group grid">
+              <div class="contact__box">
+                <input
+                  type="text"
+                  autocomplete="off"
+                  name="userName"
+                  id="name"
+                  required
+                  placeholder="Write your name"
+                  class="contact__input"
+                />
+                <label for="name" class="contact__label">First Name</label>
+              </div>
+
+              <div class="contact__box">
+                <input
+                  type="email"
+                  autocomplete="off"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Write your email"
+                  class="contact__input"
+                />
+                <label for="email" class="contact__label">Email Address</label>
+              </div>
+            </div>
+            <div class="contact__box contact__area">
+              <textarea
+                name="userMessage"
+                id="userMessage"
+                required
+                placeholder="Write your message"
+                class="contact__input"
+              ></textarea>
+              <label for="email" class="contact__label">Message</label>
+            </div>
+
+            <p class="contact__message" id="contact-message"></p>
+            <button type="submit" class="contact__send button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <span class="footer__copy">
+        &#169; All Rights Reserved By Diego Alejandro Velásquez Araque
+      </span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
